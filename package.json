@@ -1,0 +1,30 @@
+{
+  "name": "eslint-config-gzh",
+  "version": "1.0.0",
+  "description": "eslint-config-gzh",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mervynyang/eslint-config-gzh.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Mervyn Yang",
+  "license": "MIT",
+  "homepage": "https://github.com/mervynyang/eslint-config-gzh#readme",
+  "scripts": {
+    "test": "eslint . --no-fix"
+  },
+  "peerDependencies": {
+    "eslint": "^5.16.0 || ^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}
