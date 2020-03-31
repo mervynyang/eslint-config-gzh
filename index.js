@@ -20,7 +20,7 @@ module.exports = {
     "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
 
     // 禁止使用特定的语法
-    "no-restricted-syntax": ["error", "ForInStatement", "FunctionExpression", "WithStatement"],
+    "no-restricted-syntax": ["error", "ForInStatement", "WithStatement"],
 
     // 操作符换行格式
     "operator-linebreak": ["error", "after", { "overrides": { "?": "before", ":": "before" } }],

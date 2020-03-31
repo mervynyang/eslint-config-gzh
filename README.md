@@ -1,8 +1,21 @@
 # Eslint规则配置说明
 
-> airbnb配置扩展
->
-## rules
+## Installation
+```
+npm install eslint-config-gzh --save-dev
+```
+
+## Usage
+```js
+{
+  "extends": "gzh",
+  "rules": {
+    // Additional, per-project rules...
+  }
+}
+```
+
+## rules说明
 
 ```js
 {
@@ -26,7 +39,7 @@
     "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
 
     // 禁止使用特定的语法
-    "no-restricted-syntax": ["error", "ForInStatement", "FunctionExpression", "WithStatement"],
+    "no-restricted-syntax": ["error", "ForInStatement", "WithStatement"],
 
     // 操作符换行格式
     "operator-linebreak": ["error", "after", { "overrides": { "?": "before", ":": "before" } }],
@@ -36,8 +49,6 @@
 
     // 函数声明作用域会被提升，所以这样做是安全的
     "no-use-before-define": ["error", { "functions": false }],
-
-    "import/no-cycle": [3, { maxDepth: 3 }],
 
     // 允许空的catch函数
     "no-empty": ["error", { "allowEmptyCatch": true }],
